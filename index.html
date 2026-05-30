@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoArt Gallery - Professional Photography Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-camera-retro"></i>
+                <span>PhotoArt Gallery Pallavi</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1><i class="fas fa-camera"></i> Capturing Life's Beautiful Moments</h1>
+        <p>Explore stunning photography across multiple categories</p>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section" id="gallery">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">
+                <i class="fas fa-th"></i> All Photos
+            </button>
+            <button class="filter-btn" data-filter="portrait">
+                <i class="fas fa-user"></i> Portrait
+            </button>
+            <button class="filter-btn" data-filter="landscape">
+                <i class="fas fa-mountain"></i> Landscape
+            </button>
+            <button class="filter-btn" data-filter="nature">
+                <i class="fas fa-leaf"></i> Nature
+            </button>
+            <button class="filter-btn" data-filter="street">
+                <i class="fas fa-city"></i> Street
+            </button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery">
+            <!-- Portrait Photos -->
+            <div class="gallery-item" data-category="portrait">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&h=800&fit=crop"
+                    alt="Portrait 1">
+                <div class="gallery-overlay">
+                    <h3>Golden Hour Portrait</h3>
+                    <p>Natural light photography</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="landscape">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=800&fit=crop"
+                    alt="Landscape 1">
+                <div class="gallery-overlay">
+                    <h3>Mountain Vista</h3>
+                    <p>Breathtaking mountain range</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=800&fit=crop"
+                    alt="Nature 1">
+                <div class="gallery-overlay">
+                    <h3>Forest Path</h3>
+                    <p>Mystical woodland trail</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="portrait">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop"
+                    alt="Portrait 2">
+                <div class="gallery-overlay">
+                    <h3>Urban Portrait</h3>
+                    <p>City life moments</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="street">
+                <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&h=800&fit=crop"
+                    alt="Street 1">
+                <div class="gallery-overlay">
+                    <h3>City Lights</h3>
+                    <p>Urban architecture at night</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="landscape">
+                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&h=800&fit=crop"
+                    alt="Landscape 2">
+                <div class="gallery-overlay">
+                    <h3>Lake Serenity</h3>
+                    <p>Peaceful water reflections</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=600&h=800&fit=crop"
+                    alt="Nature 2">
+                <div class="gallery-overlay">
+                    <h3>Autumn Colors</h3>
+                    <p>Fall foliage beauty</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="street">
+                <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=600&h=800&fit=crop"
+                    alt="Street 2">
+                <div class="gallery-overlay">
+                    <h3>Street Art</h3>
+                    <p>Urban creativity</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="portrait">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&h=800&fit=crop"
+                    alt="Portrait 3">
+                <div class="gallery-overlay">
+                    <h3>Studio Portrait</h3>
+                    <p>Professional headshot</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="landscape">
+                <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=600&h=800&fit=crop"
+                    alt="Landscape 3">
+                <div class="gallery-overlay">
+                    <h3>Desert Dunes</h3>
+                    <p>Endless sand formations</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&h=800&fit=crop"
+                    alt="Nature 3">
+                <div class="gallery-overlay">
+                    <h3>Misty Morning</h3>
+                    <p>Foggy landscape beauty</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="street">
+                <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=800&fit=crop"
+                    alt="Street 3">
+                <div class="gallery-overlay">
+                    <h3>Urban Life</h3>
+                    <p>City street scenes</p>
+                </div>
+            </div>
+            
+            <!-- Additional Photos -->
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&h=800&fit=crop&auto=format&ixlib=rb-4.0.3&q=80&sat= -50&sig=13"
+                    alt="Nature 4">
+                <div class="gallery-overlay">
+                    <h3>Waterfall Mist</h3>
+                    <p>Soothing cascade</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="landscape">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&h=800&fit=crop&auto=format&ixlib=rb-4.0.3&q=80&sig=14"
+                    alt="Landscape 4">
+                <div class="gallery-overlay">
+                    <h3>Cliffside View</h3>
+                    <p>Coastal cliffs at sunset</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="portrait">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=800&fit=crop&auto=format&ixlib=rb-4.0.3&q=80&sig=15"
+                    alt="Portrait 4">
+                <div class="gallery-overlay">
+                    <h3>Contemporary Portrait</h3>
+                    <p>Expressive studio capture</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="street">
+                <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600&h=800&fit=crop&auto=format&ixlib=rb-4.0.3&q=80&sig=16"
+                    alt="Street 4">
+                <div class="gallery-overlay">
+                    <h3>Market Stroll</h3>
+                    <p>Colorful market scenes</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="landscape">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600&h=800&fit=crop&auto=format&ixlib=rb-4.0.3&q=80&sig=17"
+                    alt="Landscape 5">
+                <div class="gallery-overlay">
+                    <h3>Sunrise Fields</h3>
+                    <p>Golden morning light</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=600&h=800&fit=crop&auto=format&ixlib=rb-4.0.3&q=80&sig=18"
+                    alt="Nature 5">
+                <div class="gallery-overlay">
+                    <h3>Wildflower Meadow</h3>
+                    <p>Vibrant seasonal blooms</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-prev" id="lightbox-prev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-next" id="lightbox-next">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-img">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+        <p>&copy; 2026 PhotoArt Gallery. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart" style="color: #e74c3c;"></i> for photography lovers Pallavi</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
